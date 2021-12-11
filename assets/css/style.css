@@ -1,33 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     color: rgb(68, 88, 118);
     font-family: Helvetica, Arial, sans-serif
 }
 
 header {
-    background-color: rgb(22, 96, 97);
+    background-color: rgb(49, 81, 82);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
 }
 
 header h1 {
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    font-size: 60px;
     color: rgb(146, 204, 205);
+}
+
+header a {
+    background-color: rgb(22, 96, 97);
+    color: rgb(146, 204, 205);
+    width: 20%;
+    text-decoration: none;
+    padding: 20px 35px;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 /* Styles for navigation text elements */
 header nav ul li a {
+    padding: 10px 15px;
+    background-color: rgb(49, 81, 82);
     color: rgb(146, 204, 205);
+    text-decoration: underline;
 }
 
-/* Styles for hero (add background img, background-attachment,  
+/* Styles for hero (add background img, background-attachment , */  
 
 .hero {
-
+    background-image: url("../images/hero-bg.jpg");
+    height: 40%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-position: 80%;
+    align-items: flex-start;
 }
 
-*/
 
-/* Styles for hero-subtitle div class
+/* Styles for hero-subtitle div class */
 
 .hero-subtitle {
-    
+    color:rgb(146, 204, 205);
 }
 
-*/
+section {
+    padding: 60px;
+}
+
+.about {
+   
+}
+
+.about h1 {
+
+    max-width: 15%;
+    border-right: solid;
+    text-align: right;
+    padding-right: 10%;
+    padding-bottom: 0px;
+    /* padding-top: 5%; */
+}
+
+.about-subtitle {
+    padding: 0;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: inline;
+    max-width: 60%;
+}
